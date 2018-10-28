@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="HalloweenHackathon.css">
+
+
+	<!-- MAP API START -->
+
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
+	  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css" rel="stylesheet"/>
+	  <style>
+	      body { margin:0; padding:0; }
+	      #map { position:absolute; top:0; bottom:0; width:100%; } 
+  	  </style>
+
+	<!-- position:absolute;-->
+
+	<!-- MAP API END  -->
+
+	<!-- jQuery START -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+	<!-- jQuery END -->
+
+	<title>Fright-Finder.com</title>
+
+</head>
+
+<body>
+
+	<!-- Night out with friends
+		 maps API Haunted houses
+		 List Movies
+	-->
+
+	<div id="header" class="" >
+	
+		<div id="" class="faceWrapperLeft">
+			
+			<img id="facesL" src="Images/HellHoundYochi1.png">
+
+		</div>
+
+
+		<div id="" class="footerHeaderMiddle">
+			
+			<img class="banner1" src="Images/FFZ1.png">
+
+		</div>
+
+		<div id="" class="faceWrapperRight">
+			
+			<img id="facesR" src="Images/HellHoundMochi1.png">
+
+		</div>		
+
+	</div>
+
+
+
+	<div id="mapContainer" class="" >
+		
+		<h1 class="bigText">Haunted House Search</h1>
+
+		<div id="map"></div>
+		<script>
+		mapboxgl.accessToken = "pk.eyJ1Ijoia3NlbGxlcnMiLCJhIjoiY2lteTd1Nm9lMDN6bXY3a2toZGY5YWVteSJ9.R_LBBQrD6gwBAH-Aq93ZUw";
+		var map = new mapboxgl.Map({
+		  container: "map", // container id
+		  style: "mapbox://styles/ksellers/cjnrwl9qn2dpg2skzqi7auqzk" // stylesheet location
+		  center: [-74.50, 40], // starting position [lng, lat]
+		  zoom: 9 // starting zoom
+		});
+		</script>
+
+	</div>
+
+
+
+
+
+
+
+	<div id="listContainer" class="" >
+
+		<h1 class="bigText">Movie Search</h1>
+
+
+			<form>
+				
+				<input id="searchMovieInputBox" class="searchMovie" type="" name="">
+				<br/>
+				<br/>
+				<button id="getMovie">Search</button>			
+					
+			</form>
+
+
+		<div class="showTitle">
+			
+
+
+		</div>
+
+		<div class="showPoster">
+			
+
+
+		</div>
+
+
+		<div id="none" class="">
+			
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div id="footer" class="" >
+		
+		<div id="" class="faceWrapperLeft">
+			
+			<img id="facesL" src="Images/Jigsaw01a.png">
+
+		</div>
+
+
+		<div id="" class="footerHeaderMiddle">
+			
+			<img class="banner" src="Images/Jigsaw2.png">
+
+		</div>
+
+		<div id="" class="faceWrapperRight">
+			
+			<img id="facesR" src="Images/Jigsaw02b.png">
+
+		</div>
+
+		<div id="LRR" class="">
+			
+			<h1 style="color:red;">Last Rights Reserved MMXVIII</h1>
+
+		</div>
+
+
+
+	</div>
+
+
+	<script type="text/javascript" src="HalloweenHackathon.js"></script>
+</body>
+
+
+</html>
