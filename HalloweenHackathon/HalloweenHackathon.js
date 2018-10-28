@@ -18,7 +18,7 @@ $(document).ready(function() {
        for (i=0; i<genreArray.length; i++) {
        // genreArray.forEach(function(genre) {
          if ((genreArray[i] === " Horror") || (genreArray[i] === "Horror")) {
-
+           $(".#showTitle").text(response.Title);
            $(".showTitle").append(`<div class='card showMovie' style='width: 18rem;' 'id=movie${i}'>
                      <div class='card-body'>
                      <h4 class='card-title'>${response.Title}<h4>
