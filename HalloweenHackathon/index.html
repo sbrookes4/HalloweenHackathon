@@ -6,15 +6,28 @@
 
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="HalloweenHackathon.css">
-	<script
-              src="https://code.jquery.com/jquery-3.3.1.js"
-              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-              crossorigin="anonymous"></script>
-    <script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOGKm4U0et0l_ZGeE7mMcHQW1SbU_OSdI&callback=initMap">
-   </script>
 
-	<title>Halloween Hackathon Home</title>
+
+	<!-- MAP API START -->
+
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
+	  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css" rel="stylesheet"/>
+	  <style>
+	      body { margin:0; padding:0; }
+	      #map { position:absolute; top:0; bottom:0; width:100%; } 
+  	  </style>
+
+	<!-- position:absolute;-->
+
+	<!-- MAP API END  -->
+
+	<!-- jQuery START -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+	<!-- jQuery END -->
+
+	<title>Fright-Finder.com</title>
 
 </head>
 
@@ -36,7 +49,7 @@
 
 		<div id="" class="footerHeaderMiddle">
 			
-			<img class="banner1" src="Images/FF2.png">
+			<img class="banner1" src="Images/FFZ1.png">
 
 		</div>
 
@@ -53,6 +66,17 @@
 	<div id="mapContainer" class="" >
 		
 		<h1 class="bigText">Haunted House Search</h1>
+
+		<div id="map"></div>
+		<script>
+		mapboxgl.accessToken = "pk.eyJ1Ijoia3NlbGxlcnMiLCJhIjoiY2lteTd1Nm9lMDN6bXY3a2toZGY5YWVteSJ9.R_LBBQrD6gwBAH-Aq93ZUw";
+		var map = new mapboxgl.Map({
+		  container: "map", // container id
+		  style: "mapbox://styles/ksellers/cjnrwl9qn2dpg2skzqi7auqzk" // stylesheet location
+		  center: [-74.50, 40], // starting position [lng, lat]
+		  zoom: 9 // starting zoom
+		});
+		</script>
 
 	</div>
 
@@ -123,7 +147,7 @@
 
 		<div id="" class="faceWrapperRight">
 			
-			<img id="facesR" src="Images/Jigsaw02a.png">
+			<img id="facesR" src="Images/Jigsaw02b.png">
 
 		</div>
 
